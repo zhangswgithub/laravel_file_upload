@@ -1,0 +1,29 @@
+{
+    "name": "file/upload",
+    "require": {
+        "hanson/foundation-sdk": "^5.0",
+        "overtrue/http": "^1.1|1.2",
+        "qiniu/php-sdk": "^7.4",
+        "aliyuncs/oss-sdk-php": "^2.4",
+        "qcloud/cos-sdk-v5": "^2.4"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "File\\Upload\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zhang",
+            "email": "ceshi@yeah.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "File\\Upload\\ServiceProvider"
+            ]
+        }
+    }
+}
